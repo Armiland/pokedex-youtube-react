@@ -27,7 +27,7 @@ export default class Pokemon extends Component {
     };
 
     async componentDidMount() {
-        const { pokemonIndex } = this.props.match.params;
+        const { pokemonIndex } = this.props.match.useParams;
 
         //Urls for pokemon information
         const pokemonUrl = `https://pokeapi.co/api/v2/pokemon?limit=100000&offset=0/${pokemonIndex}`;
